@@ -1,0 +1,149 @@
+
+\فصل{الگوریتمِ کوانتومیِ نقطه در چندضلعی}
+
+می‌بینیم صورت‌بندیِ ایدهٔ دوم که در فصلِ پیشین مطرح شد، شباهتِ زیادی به مسئلهٔ مربوط به الگوریتمِ دویچ-جوزا دارد، اما وجودِ وزن‌ها، امکانِ استفاده از الگوریتمِ دویچ‌جوزا را به ما نمی‌دهد.
+
+اما می‌دانیم اگر حالتی به شکلِ زیر داشته‌باشیم
+\begin{equation}
+    \ket{\phi_1} := \frac{1}{\sqrt{N-1}} \sum_{q_iq_{i+1} \in \mathrm{segments}} \kappa \theta_i s_i \ket{q_i q_{i+1}} 
+\end{equation}
+
+که در آن $\kappa$ یک ضریب برای بهنجارسازی‌ست، آنگاه با استفاده از تبدیلِ فوریه، می‌توانیم به حالتی برسیم که دامنهٔ حالتِ 
+$\ket{0}$
+یا همان عنصرِ همانیِ گروه، در آن به شکلِ زیر باشد
+\begin{equation}
+    \bra{0} \mathrm{QFT} \ket{\psi} =  \frac{1}{N-1} \sum_{q_iq_{i+1} \in \mathrm{segments}} \kappa \theta_i s_i 
+\end{equation}
+که از آن‌جا که برای هرتبدیلِ فوریه‌ای این مهم برقرار است، می‌توان به جای 
+$\mathrm{QFT}$
+قرار داد
+$H^{\otimes \log(N - 1)}$
+و فرض بگیریم که $N-1$ توانی از دو است.
+
+پس برای احتمالِ اندازه‌گیریِ 
+$0$
+پس از تبدیلِ فوریه داریم
+\begin{equation}
+    \label{eq:base-qalg-prob}
+    \Pr(\text{اندازه‌گیریِ $0$}) = \abs{\bra{0} H^{\otimes \log(N - 1)} \ket{\psi}}^2 = \begin{cases}
+    \frac{4\kappa^2\pi^2}{(N - 1)^2} & \text{نقطه داخلِ چندضلعی‌ست} \\
+    0 & \text{نقطه بیرونِ چندضلعی‌ست}
+    \end{cases}
+\end{equation}
+اما حالا ضریبِ $\kappa$ مربوط به فرایندِ تولیدِ این حالت است. اگر فرض کنیم ابتدا حالتی بسازیم که
+
+\begin{equation}
+    \ket{\phi_0} = \frac{1}{\sqrt{N-1}} \sum_{q_iq_{i+1} \in \mathrm{segments}} \theta_i s_i \ket{q_i q_{i+1}}
+\end{equation}
+
+سپس به سادگی با استفاده اضافه کردنِ کیوبیت، از جعبه‌سیاه‌ها و تعمیمِ مدارهای کلاسیک، می‌توانیم به حالتِ زیر برسیم
+
+\begin{equation}
+    \ket{\phi_0} = \frac{1}{\sqrt{N-1}} \sum_{q_iq_{i+1} \in \mathrm{segments}} \ket{q_i q_{i+1}}\ket{\arcsin{\kappa\theta_i}}\ket{s_i}
+\end{equation}
+
+و پس از آن با استفاده از ایده‌هایی مرسوم، نظیرِ ایده‌های استفاده شده در بخشِ \رجوع{بخش:گروور} به حالتِ $\ket{\phi_1}$ رسید.
+\زیرنویس{ایدهٔ تبدیلِ $s_i$ به 
+$(-1)^{s_i}$
+دقیقاً مشابهِ آن‌چیزی‌ست که در بخشِ مذکور بحث شد، همچنین برای قسمتِ 
+$\theta_i$
+یک فرضِ طبیعی این است که مقدارِ 
+$\arcsin(\kappa\theta_i)$
+در چندکیوبیت به شکلِ دودویی ذخیره شده‌است و آن را می‌توان به شکلِ
+$\overline{r_{2^d} r_{2^{d-1}}\dots r_2 r_1}$
+که یکان و دوگان و الی آخر باشند. سپس، یک گیتِ شناخته‌شده و قابلِ پیاده‌سازی که به طورِ معمول در مدارهای کوانتومی نظیرِ تبدیلِ فوریه برای گروه‌های عددی استفاده می‌شود، گیتِ 
+$\mathrm{C-}R_{x}$
+است که عملکردِ آن به شکلِ زیر است
+\begin{equation}
+    \begin{cases} \mathrm{C-}R_{x}\ket{1}\ket{0} = \ket{1}(\cos(x)\ket{0} + \sin(x)\ket{1}) \\
+    \mathrm{C-}R_{x}\ket{1}\ket{0} = \ket{0}\ket{0} \end{cases}
+\end{equation}
+
+حالا با در دست داشتنِ مدارهایی از این جنس، می‌توان حالتِ مذکور را تدارک دید.
+یک نکتهٔ مهم فرایندِ پاک کردنِ اطلاعات کیوبیت‌های مورداستفاده 
+$\theta_i$ و $s_i$ 
+که با استفادهٔ دوباره از جعبه‌سیاه ممکن می‌شود و کیوبیت‌های مذکور
+به حالتِ صفر و جدا می‌روند و می‌توان آن‌ها را از فرایند حذف کرد.}
+
+پس با توجه به نکاتِ گفته‌شده لازم است که
+$\kappa \theta_i \le 1$
+که نتیجه می‌دهد بدیهی‌ترین انتخاب 
+$\kappa = \frac{1}{\pi}$
+باشد زیرا که زاویهٔ یک پاره‌خط در مقابلِ یک نقطه حداکثر به نیم‌صفحه می‌رسد.
+در این صورت این احتمال نیز به شکلِ 
+$\O{\frac{1}{N^2}}$
+کوچک خواهدبود.
+
+اما اگر قولی وجود داشته‌باشد که 
+$\theta_i \le \frac{\gamma}{N} \in \O{\frac{1}{N}}$
+که هم‌ارزِ این قول است که نقاطی که بررسی می‌کنیم به اضلاع بیش‌ازحد نزدیک نباشند و این فاصله از مرتبهٔ طولِ اضلاع باشد، آن‌گاه می‌توان $kappa$ را برابرِ 
+$\frac{N}{\gamma \pi}$
+قرار داد که در نتیجه احتمالِ تشخیصِ نقطه درونِ چندضلعی در معادلهٔ \رجوع{eq:base-qalg-prob} برابر با عددی ثابت خواهدشد که این یعنی با در این حالت تنها با یک پرسش می‌توان با خطای محدود به پاسخِ مسئله رسید.
+
+این الگوریتم را می‌توان به شکلِ زیر بازنویسی کرد
+\شروع{الگور}[آ]
+\begin{latin}
+\begin{lstlisting}
+function IsPointInPolygonPromised(gamma: Double,
+             coordsOfSeg: Hilbert(log(N-1) qubit × D qubit × D qubit) gate)
+    index : log(N - 1) qubit state
+    coordsStart : D qubit state
+    coordsEnd : D qubit state
+    arcsinTheta : D qubit state
+    side : 1 qubit state
+
+    function ClassicalCircuitForTheta(coordStart, coordEnd) = 
+        arcsin(norm(coordStart - coordEnd) / norm((coordStart + coordEnd) / 2 - P) 
+            * N / gamma / pi)
+    function ClassicalCircuitForS(coordStart, coordEnd) = 
+        sign(cross(P - (coordStart + coordEnd) / 2, coordEnd - coordStart).z)
+        
+    gate EncodedAngleFromP = quantum(ClassicalCircuitForTheta)
+    gate SideFromP = quantum(ClassicalCircuitForS)
+    
+    // stage 1, initialization
+    Initiate coordStart to 0
+    Initiate coordEnd to 0
+    Initiate arcsinTheta to 0
+    Initiate side to 0
+    for i : integer from 1 to log(N-1) {
+        Initiate index[i] to 0
+        Apply H on x[i]
+    }
+    
+    // stage 2, pplying oracles
+    Apply EncodedAngleFromP on coordStart, coordEnd, arcsinTheta
+    Apply EncodedAngleFromS on coordStart, coordEnd, side
+    // stage 3, Transforming oracle informations
+    for i : integer from 1 to D {
+        Apply C-R(2^(-i)) on arcsinTheta[i]
+    }
+    Apply Z on side
+    // stage 4, pplying oracles again to remove data
+    Apply EncodedAngleFromP on coordStart, coordEnd, arcsinTheta
+    Apply EncodedAngleFromS on coordStart, coordEnd, side
+    
+    // stage 5, Hadamard transform and measurement
+    for i : integer from 1 to log(N-1)
+        Apply H on x[i]
+        
+    is_in : boolean = true
+    for i : integer from 1 to log(N-1)
+        result : boolean = Measure on x[i]
+        if (result)
+            is_in = false
+
+    return is_in
+\end{lstlisting}
+\end{latin}
+\پایان{الگور}
+\زیرقسمت{گسترشِ الگوریتم برای حالت‌های دیگر}
+
+می‌دانیم که برای عملکردِ درستِ الگوریتم لازم است که احتمالی که در معادلهٔ \رجوع{eq:base-qalg-prob} افزایش یابد و به مقدارِ ثابتی برسد. از این رو، می‌توان از الگوریتمِ تقویتِ دامنه که در بخشِ \رجوع{بخش:گروور} تعریف شده‌است کمک بگیریم.
+اگر کلِ فرایندِ الگوریتمِ قبل را تا پیش از اندازه‌گیری $G$ بنامیم، همچنین 
+$\mathbb{P_T}$
+را تصویر برروی عددِ $0$ باشد (که احتمالِ آن موردِ نظر است)، آن را تقویت کرد.
+تعدادِ مراحلِ لازم برای این تقویت از مرتبهٔ
+$\O{\frac{N}{\kappa}}$
+خواهدبود که این نشان می‌دهد اگر $\kappa$ عدد ثابتی باشد، این الگوریتم هیچ تسریعی نمی‌تواند داشته‌باشد.
+

@@ -1,0 +1,46 @@
+
+% -------------------------------------------------------
+%  Custom Definitions
+% -------------------------------------------------------
+
+
+\usepackage{xcolor}
+
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{algorithm}
+
+\lstset{%
+    aboveskip=3mm,
+    belowskip=3mm,
+    basicstyle={\footnotesize\ttfamily},
+    %numbers=left,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    morekeywords={function, for, from, to, if, return, gate, qubit, state, boolean, true, false, integer, on},
+    morecomment=[l]{//},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2}
+
+
+\محیط‌نو{الگور}{\شروع{algorithm}}{\پایان{algorithm}}
+
+%\newframedtheorem{مثال}{مثال}
+\newtheorem{نمایش}{نمایش}
+%\newframedtheorem{تعریف}{تعریف}
+
+
+\DeclareMathOperator{\size}{size}
+\DeclareMathOperator{\depth}{depth}
+\renewcommand{\O}[1]{\mathcal{O}(#1)}
+
+\DeclareMathOperator{\AND}{AND}
+\DeclareMathOperator{\OR}{OR}
+\DeclareMathOperator{\XOR}{XOR}
+\DeclareMathOperator{\NOT}{NOT}
+\DeclareMathOperator{\CNOT}{CNOT}
+
