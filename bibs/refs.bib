@@ -1,61 +1,50 @@
 % probability theory
 
 @book{grinstead,
-	location = {Providence, {RI}},
-	edition = {2., rev. ed., reprinted with corr},
-	title = {Introduction to probability},
-	isbn = {978-0-8218-9414-9 978-0-8218-0749-1},
-	pagetotal = {510},
+	edition = {2nd edition},
+	title = {Introduction to Probability},
+	isbn = {978-0-8218-0749-1},
 	publisher = {American Mathematical Society},
-	author = {Grinstead, Charles M. and Snell, James Laurie},
-	date = {1998},
-	note = {{OCLC}: 247661058},
-	file = {Table of Contents PDF:/home/sloth/Zotero/storage/QKHWQHZA/Grinstead and Snell - 1998 - Introduction to probability.pdf:application/pdf}
+	author = {Grinstead, Charles M. and Snell, J. Laurie},
+	year = {1997}
 }
 
 % group
 
-@article{dandavati,
-	title = {The Fourier Transform on Finite Groups: Theory and Computation},
-	abstract = {This paper builds the theory of Fourier analysis on ﬁnite groups. First, Fourier analysis on the real domain is discussed. Then, Fourier analysis on ﬁnite abelian groups is developed. After this, a brief introduction to representation theory allows for the discussion of Fourier analysis on all ﬁnite groups. Algorithms are designed to perform these transforms, building to the eﬃcient algorithm developed by Diaconis and Rockmore. Finally, an implementation of this algorithm for computing Fourier transforms on Sn is demonstrated.},
-	pages = {23},
-	author = {Dandavati, Rohan},
-	langid = {english},
-	file = {Dandavati - THE FOURIER TRANSFORM ON FINITE GROUPS THEORY AND.pdf:/home/sloth/Zotero/storage/BRND2ASV/Dandavati - THE FOURIER TRANSFORM ON FINITE GROUPS THEORY AND.pdf:application/pdf}
+@book{terras,
+	title = {Fourier Analysis on Finite Groups and Applications},
+	isbn = {978-0-521-45718-7},
+	series = {London Mathematical Society Student Texts},
+	publisher = {Cambridge University Press},
+	author = {Terras, Audrey},
+	year = {1999},
+	doi = {10.1017/CBO9780511626265}
 }
 
 % general QC
 
-
-@misc(karimipour,
-    name="something",
-    author = "Vahid Karimipour",
-    title = "Quantum Computation and Information",
-    type = "Lecture Note in Persian",
-    howpublished = "Homepage of Vahid Karimipour",
+@misc{karimipour,
+    title = "Lecture Notes on Quantum Computation and Information",
+    author = "Karimipour, Vahid",
+    howpublished = "\href{http://physics.sharif.edu/~vahid/teachingQC.html}{Homepage of VK}",
     url = {http://physics.sharif.edu/~vahid/teachingQC.html},
-    organization  = "Sharif University of Technology",
-    date = "Spring 2021",
+	urldate = {2021-06-25},
+    year = "2021",
 }
 
 @article{boykin,
 	title = {A new universal and fault-tolerant quantum basis},
 	volume = {75},
 	issn = {00200190},
-	url = {https://linkinghub.elsevier.com/retrieve/pii/S0020019000000843},
 	doi = {10.1016/S0020-0190(00)00084-3},
 	pages = {101--107},
 	number = {3},
-	journaltitle = {Information Processing Letters},
-	shortjournal = {Information Processing Letters},
+	journal = {Information Processing Letters},
 	author = {Boykin, P.Oscar and Mor, Tal and Pulver, Matthew and Roychowdhury, Vwani and Vatan, Farrokh},
-	urldate = {2021-06-25},
-	date = {2000-08},
-	langid = {english}
+	year = {2000}
 }
 
 @book{aaronson2013, 
-    place={Cambridge}, 
     title={Quantum Computing since Democritus}, 
     DOI={10.1017/CBO9780511979309}, 
     publisher={Cambridge University Press}, 
@@ -67,40 +56,31 @@
 	title = {The {ZX}-calculus is complete for stabilizer quantum mechanics},
 	volume = {16},
 	issn = {1367-2630},
-	url = {http://arxiv.org/abs/1307.7025},
 	doi = {10.1088/1367-2630/16/9/093021},
-	abstract = {The {ZX}-calculus is a graphical calculus for reasoning about quantum systems and processes. It is known to be universal for pure state qubit quantum mechanics, meaning any pure state, unitary operation and post-selected pure projective measurement can be expressed in the {ZX}-calculus. The calculus is also sound, i.e. any equality that can be derived graphically can also be derived using matrix mechanics. Here, we show that the {ZX}-calculus is complete for pure qubit stabilizer quantum mechanics, meaning any equality that can be derived using matrices can also be derived pictorially. The proof relies on bringing diagrams into a normal form based on graph states and local Clifford operations.},
 	pages = {093021},
 	number = {9},
-	journaltitle = {New Journal of Physics},
-	shortjournal = {New J. Phys.},
+	journal = {New Journal of Physics},
 	author = {Backens, Miriam},
-	urldate = {2021-07-05},
-	date = {2014-09-17},
+	year = {2014},
 	eprinttype = {arxiv},
 	eprint = {1307.7025},
-	keywords = {Quantum Physics},
-	file = {arXiv Fulltext PDF:/home/sloth/Zotero/storage/RMEN6C3I/Backens - 2014 - The ZX-calculus is complete for stabilizer quantum.pdf:application/pdf;arXiv.org Snapshot:/home/sloth/Zotero/storage/NKBK8UB2/1307.html:text/html}
 }
 
-@article{selinger,
-	title = {A lambda calculus for quantum computation with classical control},
-	volume = {3461},
-	url = {http://arxiv.org/abs/cs/0404056},
-	doi = {10.1007/11417170_26},
-	abstract = {The objective of this paper is to develop a functional programming language for quantum computers. We develop a lambda calculus for the classical control model, following the first author's work on quantum flow-charts. We define a call-by-value operational semantics, and we give a type system using affine intuitionistic linear logic. The main results of this paper are the safety properties of the language and the development of a type inference algorithm.},
+@inproceedings{selinger,
+	location = {Berlin, Heidelberg},
+	title = {A Lambda Calculus for Quantum Computation with Classical Control},
+	isbn = {978-3-540-32014-2},
 	pages = {354--368},
-	journaltitle = {{arXiv}:cs/0404056},
-	author = {Selinger, Peter and Valiron, Benoit},
-	urldate = {2021-07-05},
-	date = {2005},
-	eprinttype = {arxiv},
-	eprint = {cs/0404056},
-	keywords = {Computer Science - Logic in Computer Science, F.4.1},
-	file = {arXiv Fulltext PDF:/home/sloth/Zotero/storage/4QW8U2QC/Selinger and Valiron - 2005 - A lambda calculus for quantum computation with cla.pdf:application/pdf;arXiv.org Snapshot:/home/sloth/Zotero/storage/HFMQC9KP/0404056.html:text/html}
+	booktitle = {Typed Lambda Calculi and Applications},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Selinger, Peter and Valiron, Benoît},
+	editor = {Urzyczyn, Pawe\{{\textbackslash}textbackslash\}l},
+	year = {2005}
 }
 
 % quantum algorithms
+
+% from here, so on, references are not cleaned.
 
 @online{jordan,
     author/editor   = "Stephen Jordan",
@@ -201,18 +181,12 @@ Publisher: Nature Publishing Group},
 @article{deutsch,
 	title = {Quantum computational networks},
 	volume = {425},
-	url = {https://royalsocietypublishing.org/doi/abs/10.1098/rspa.1989.0099},
 	doi = {10.1098/rspa.1989.0099},
-	abstract = {The theory of quantum computational networks is the quantum generalization of the theory of logic circuits used in classical computing machines. Quantum gates are the generalization of classical logic gates. A single type of gate, the universal quantum gate, together with quantum ‘unit wires’, is adequate for constructing networks with any possible quantum computational property.},
 	pages = {73--90},
 	number = {1868},
-	journaltitle = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
-	shortjournal = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
+	journal = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
 	author = {Deutsch, David Elieser and Penrose, Roger},
-	urldate = {2020-08-31},
-	date = {1989-09-08},
-	note = {Publisher: Royal Society},
-	file = {Full Text PDF:/home/sloth/Zotero/storage/NMTM9AWD/Deutsch and Penrose - 1989 - Quantum computational networks.pdf:application/pdf;Snapshot:/home/sloth/Zotero/storage/DXDEZAWL/rspa.1989.html:text/html}
+	year = {1989},
 }
 @article{watrous,
 	title = {Quantum Computational Complexity},
