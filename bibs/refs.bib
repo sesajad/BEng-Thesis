@@ -1,7 +1,7 @@
 % probability theory
 
 @book{grinstead,
-	edition = {2nd edition},
+	edition = {second},
 	title = {Introduction to Probability},
 	isbn = {978-0-8218-0749-1},
 	publisher = {American Mathematical Society},
@@ -28,7 +28,7 @@
     author = "Karimipour, Vahid",
     howpublished = "\url{http://physics.sharif.edu/~vahid/teachingQC.html}",
     note = {Accessed: 2021-06-25},
-    year = "2021",
+    year = "Fall and Spring 2021",
 }
 
 @article{boykin,
@@ -62,11 +62,10 @@
 	author = {Backens, Miriam},
 	year = {2014},
 	eprinttype = {arxiv},
-	eprint = {1307.7025},
+	eprint = {1307.7025}
 }
 
 @inproceedings{selinger,
-	location = {Berlin, Heidelberg},
 	title = {A Lambda Calculus for Quantum Computation with Classical Control},
 	isbn = {978-3-540-32014-2},
 	pages = {354--368},
@@ -95,7 +94,7 @@
     author = "Stephen Jordan",
     title = "Quantum Algorithm Zoo",
     howpublished = "\url{https://quantumalgorithmzoo.org/}",
-    note = {Accessed: 2021-07-08},
+    note = {Accessed: 2021-07-08}
 }
 
 @article{deutsch-joza,
@@ -109,57 +108,44 @@
   publisher={The Royal Society London}
 }
 
-% from here, so on, references are not cleaned.
-
-@article{kitaev,
+@misc{kitaev,
 	title = {Quantum measurements and the Abelian Stabilizer Problem},
 	author = {Kitaev, A. Yu},
-	year = {1995-11-20},
-	eprinttype = {arxiv},
-	eprint = {quant-ph/9511026},
-	keywords = {Quantum Physics},
-	file = {arXiv Fulltext PDF:/home/sloth/Zotero/storage/VSYIUPA9/Kitaev - 1995 - Quantum measurements and the Abelian Stabilizer Pr.pdf:application/pdf;arXiv.org Snapshot:/home/sloth/Zotero/storage/AJD6WSJ3/9511026.html:text/html}
+    howpublished = {\href{https://arxiv.org/abs/quant-ph/9511026}{arxiv:quant-ph/9511026}},
+	year = {1995},
+	eprint = {9511026},
+    archivePrefix={arXiv},
+    primaryClass={quant-ph}
 }
 
 @inproceedings{shor,
-	location = {Santa Fe, {NM}, {USA}},
 	title = {Algorithms for quantum computation: discrete logarithms and factoring},
 	isbn = {978-0-8186-6580-6},
-	url = {http://ieeexplore.ieee.org/document/365700/},
 	doi = {10.1109/SFCS.1994.365700},
-	shorttitle = {Algorithms for quantum computation},
-	eventtitle = {35th Annual Symposium on Foundations of Computer Science},
 	pages = {124--134},
 	booktitle = {Proceedings 35th Annual Symposium on Foundations of Computer Science},
 	publisher = {{IEEE} Comput. Soc. Press},
 	author = {Shor, P.W.},
-	urldate = {2021-07-05},
-	date = {1994}
+	year = {1994}
 }
 
 @article{montanaro,
 	title = {Quantum algorithms: an overview},
 	volume = {2},
-	rights = {2016 The Author(s)},
 	issn = {2056-6387},
 	url = {https://www.nature.com/articles/npjqi201523},
 	doi = {10.1038/npjqi.2015.23},
-	shorttitle = {Quantum algorithms},
-	abstract = {Quantum computers are designed to outperform standard computers by running quantum algorithms. Areas in which quantum algorithms can be applied include cryptography, search and optimisation, simulation of quantum systems and solving large systems of linear equations. Here we briefly survey some known quantum algorithms, with an emphasis on a broad overview of their applications rather than their technical details. We include a discussion of recent developments and near-term applications of quantum algorithms.},
 	pages = {1--8},
 	number = {1},
-	journaltitle = {npj Quantum Information},
+	journal = {npj Quantum Information},
 	author = {Montanaro, Ashley},
-	urldate = {2020-08-31},
-	date = {2016-01-12},
-	langid = {english},
-	note = {Number: 1
-Publisher: Nature Publishing Group},
-	file = {Full Text PDF:/home/sloth/Zotero/storage/463TI4G6/Montanaro - 2016 - Quantum algorithms an overview.pdf:application/pdf;Snapshot:/home/sloth/Zotero/storage/8Z785RTW/npjqi201523.html:text/html}
+	year = {2016}
 }
+
 @misc{lokhov,
     title={Quantum Algorithm Implementations for Beginners},
     author={Abhijith J. and Adetokunbo Adedoyin and John Ambrosiano and Petr Anisimov and Andreas Bärtschi and William Casper and Gopinath Chennupati and Carleton Coffrin and Hristo Djidjev and David Gunter and Satish Karra and Nathan Lemons and Shizeng Lin and Alexander Malyzhenkov and David Mascarenas and Susan Mniszewski and Balu Nadiga and Daniel O'Malley and Diane Oyen and Scott Pakin and Lakshman Prasad and Randy Roberts and Phillip Romero and Nandakishore Santhi and Nikolai Sinitsyn and Pieter J. Swart and James G. Wendelberger and Boram Yoon and Richard Zamora and Wei Zhu and Stephan Eidenbenz and Patrick J. Coles and Marc Vuffray and Andrey Y. Lokhov},
+    howpublished = {\href{https://arxiv.org/abs/1804.03719}{arxiv:cs.ET/1804.03719}},
     year={2018},
     eprint={1804.03719},
     archivePrefix={arXiv},
@@ -169,14 +155,27 @@ Publisher: Nature Publishing Group},
 
 % quantum complexity
 
+@article{ambainis_2002,
+	title = {Quantum Lower Bounds by Quantum Arguments},
+	volume = {64},
+	issn = {00220000},
+	doi = {10.1006/jcss.2002.1826},
+	pages = {750--767},
+	number = {4},
+	journal = {Journal of Computer and System Sciences},
+	author = {Ambainis, Andris},
+	year = {2002}
+}
+
 @misc{aaronson2010,
     author   = "Scott Aaronson",
-    title           = "6.845 Quantum Complexity Theory",
-    type = "Lecture Note",
-    howpublished    = "MIT OpenCourseWare",
+    title           = "Lecture Notes of 6.845 Quantum Complexity Theory",
+    howpublished    = "\href{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-845-quantum-complexity-theory-fall-2010/lecture-notes/}{MIT OpenCourseWare}",
     organization    = "Massachusetts Institute of Technology",
-    date            = "Fall 2010"
+    year            = "Fall 2010",
+    note = {Accessed: 2021-06-25}
 }
+
 
 @book{arora,
   title={Computational complexity: a modern approach},
@@ -193,27 +192,21 @@ Publisher: Nature Publishing Group},
 	number = {1868},
 	journal = {Proceedings of the Royal Society of London. A. Mathematical and Physical Sciences},
 	author = {Deutsch, David Elieser and Penrose, Roger},
-	year = {1989},
+	year = {1989}
 }
-@article{watrous,
-	title = {Quantum Computational Complexity},
-	url = {http://arxiv.org/abs/0804.3401},
-	abstract = {This article surveys quantum computational complexity, with a focus on three fundamental notions: polynomial-time quantum computations, the efficient verification of quantum proofs, and quantum interactive proof systems. Properties of quantum complexity classes based on these notions, such as {BQP}, {QMA}, and {QIP}, are presented. Other topics in quantum complexity, including quantum advice, space-bounded quantum computation, and bounded-depth quantum circuits, are also discussed.},
-	journaltitle = {{arXiv}:0804.3401 [quant-ph]},
-	author = {Watrous, John},
-	urldate = {2020-08-31},
-	date = {2008-04-21},
-	eprinttype = {arxiv},
-	eprint = {0804.3401},
-	note = {version: 1},
-	keywords = {Quantum Physics},
-	file = {arXiv Fulltext PDF:/home/sloth/Zotero/storage/IFS7VUGA/Watrous - 2008 - Quantum Computational Complexity.pdf:application/pdf;arXiv.org Snapshot:/home/sloth/Zotero/storage/JP4C449B/0804.html:text/html}
+
+@misc{watrous,
+      title={Quantum Computational Complexity}, 
+      author={John Watrous},
+      howpublished = {\href{https://arxiv.org/abs/0804.3401}{arxiv:quant-ph/0804.3401}},
+      year={2008},
+      eprint={0804.3401},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
 }
 @inproceedings{yao,
-	location = {Palo Alto, {CA}, {USA}},
 	title = {Quantum circuit complexity},
 	isbn = {978-0-8186-4370-5},
-	url = {http://ieeexplore.ieee.org/document/366852/},
 	doi = {10.1109/SFCS.1993.366852},
 	abstract = {We study a complexity model of quantum circuits analogous to the standard (acyclic) Boolean circuit model. It is shown that any function computable in polynomial time by a quantum Turing machine has a polynomial-size quantum circuit. This result also enables us to construct a universal quantum computer which can simulate, with a polynomial factor slowdown, a broader class of quantum machines than that considered by Bernstein and Vazirani {BV}93], thus answering an open question raised in {BV}93]. We also develop a theory of quantum communication complexity, and use it as a tool to prove that the majority function does not have a linear-size quantum formula.},
 	eventtitle = {1993 {IEEE} 34th Annual Foundations of Computer Science},
@@ -221,114 +214,140 @@ Publisher: Nature Publishing Group},
 	booktitle = {Proceedings of 1993 {IEEE} 34th Annual Foundations of Computer Science},
 	publisher = {{IEEE}},
 	author = {Chi-Chih Yao, A.},
-	urldate = {2020-08-31},
-	date = {1993},
-	langid = {english},
-	file = {Chi-Chih Yao - 1993 - Quantum circuit complexity.pdf:/home/sloth/Zotero/storage/CHQ6TSZH/Chi-Chih Yao - 1993 - Quantum circuit complexity.pdf:application/pdf}
+	year = {1993}
 }
 
 % Computational Geoemetry
 
-@article{toth,
-	title = {Handbook of Discrete and Computational Geometry, Third Edition},
-	pages = {1951},
-	author = {Toth, Csaba D and O'Rourke, Joseph and Goodman, Jacob E},
-	langid = {english},
-	file = {Toth et al. - Handbook of Discrete and Computational Geometry, T.pdf:C\:\\Users\\sskah\\Files\\Works\\University\\B Project\\Toth et al. - Handbook of Discrete and Computational Geometry, T.pdf:application/pdf}
+@book{toth,
+	edition = {third},
+	title = {Handbook of discrete and computational geometry},
+	isbn = {978-1-4987-1139-5},
+	publisher = {{CRC} Press},
+	editor = {Tóth, Csaba and O'Rourke, Joseph and Goodman, Jacob E.},
+	year = {2017}
 }
 
 @book{preparata,
-	location = {New York},
-	edition = {6. print},
 	title = {Computational geometry: an introduction},
 	isbn = {978-3-540-96131-4 978-0-387-96131-6},
 	series = {Texts and monographs in computer science},
-	shorttitle = {Computational geometry},
-	pagetotal = {398},
 	publisher = {Springer},
 	author = {Preparata, Franco P. and Shamos, Michael Ian},
-	date = {2008}
+	year = {2008}
 }
 
-@collection{kao,
-	location = {New York, {NY}},
-	edition = {Second edition},
+@book{kao,
+	edition = {second},
 	title = {Encyclopedia of algorithms: with 379 figures and 51 tables},
 	isbn = {978-1-4939-2863-7 978-1-4939-2865-1},
-	shorttitle = {Encyclopedia of algorithms},
-	pagetotal = {3},
 	publisher = {Springer Reference},
 	editor = {Kao, Ming-Yang},
-	date = {2016},
-	keywords = {Algorithms, Encyclopedias}
+	year = {2016},
 }
 
 @book{berg,
-	location = {Berlin},
-	edition = {3rd ed},
+	edition = {third},
 	title = {Computational geometry: algorithms and applications},
 	isbn = {978-3-540-77973-5},
-	shorttitle = {Computational geometry},
-	pagetotal = {386},
 	publisher = {Springer},
-	editor = {Berg, Mark de},
-	date = {2008},
-	keywords = {Data processing, Geometry, Textbooks}
+	author = {Berg, Mark de},
+	year = {2008},
 }
 
 @article{huang,
 	title = {On the complexity of point-in-polygon algorithms},
 	volume = {23},
 	issn = {00983004},
-	url = {https://linkinghub.elsevier.com/retrieve/pii/S0098300496000714},
 	doi = {10.1016/S0098-3004(96)00071-4},
 	pages = {109--118},
 	number = {1},
-	journaltitle = {Computers \& Geosciences},
-	shortjournal = {Computers \& Geosciences},
+	journal = {Computers \& Geosciences},
 	author = {Huang, Chong-Wei and Shih, Tian-Yuan},
-	urldate = {2021-06-12},
-	date = {1997-02},
-	langid = {english}
+	year = {1997}
+}
+
+
+@article{atallah,
+	title = {A linear time algorithm for the Hausdorff distance between convex polygons},
+	volume = {17},
+	issn = {0020-0190},
+	doi = {10.1016/0020-0190(83)90042-X},
+	pages = {207--209},
+	number = {4},
+	journal = {Information Processing Letters},
+	author = {Atallah, Mikhail J.},
+	year = {1983}
 }
 
 % Quantum Computaitonal Geometry
 
-@article{ambainis_2020,
-	title = {Quantum algorithms for computational geometry problems},
-	url = {http://arxiv.org/abs/2004.08949},
-	abstract = {We study quantum algorithms for problems in computational geometry, such as Point-On3-Lines problem. In this problem, we are given a set of lines and we are asked to ﬁnd a point that lies on at least 3 of these lines. Point-On-3-Lines and many other computational geometry problems are known to be 3Sum-Hard. That is, solving them classically requires time Ω(n2−o(1)), unless there is faster algorithm for the well known 3Sum problem (in which we are given a set S of n integers and have to determine if there are a, b, c ∈ S such that a + b + c = 0). Quantumly, 3Sum can be solved in time O(n log n) using Grover’s quantum search algorithm. This leads to a question: can we solve Point-On-3-Lines and other 3Sum-Hard problems in O(nc) time quantumly, for c {\textless} 2? We answer this question aﬃrmatively, by constructing a quantum algorithm that solves {PointOn}-3-Lines in time O(n1+o(1)). The algorithm combines recursive use of amplitude ampliﬁcation with geometrical ideas. We show that the same ideas give O(n1+o(1)) time algorithm for many 3Sum-Hard geometrical problems.},
-	journaltitle = {{arXiv}:2004.08949 [quant-ph]},
-	author = {Ambainis, Andris and Larka, Nikita},
-	urldate = {2020-07-12},
-	date = {2020-04-19},
-	langid = {english},
-	eprinttype = {arxiv},
-	eprint = {2004.08949},
-	keywords = {Quantum Physics, Computer Science - Computational Complexity, Computer Science - Data Structures and Algorithms, Computer Science - Computational Geometry},
-	file = {Ambainis and Larka - 2020 - Quantum algorithms for computational geometry prob.pdf:C\:\\Users\\sskah\\Files\\Works\\University\\B Project\\Ambainis and Larka - 2020 - Quantum algorithms for computational geometry prob.pdf:application/pdf}
+@inproceedings{sadakane_2001,
+	title = {Quantum Algorithms for Intersection and Proximity Problems},
+	isbn = {978-3-540-45678-0},
+	doi = {10.1007/3-540-45678-3_14},
+	series = {Lecture Notes in Computer Science},
+	pages = {148--159},
+	booktitle = {Algorithms and Computation},
+	publisher = {Springer},
+	author = {Sadakane, Kunihiko and Sugawara, Norito and Tokuyama, Takeshi},
+	editor = {Eades, Peter and Takaoka, Tadao},
+	year = {2001}
 }
+
+@article{sadakane_2002,
+	title = {Quantum Computation in Computational Geometry},
+	volume = {8},
+	issn = {1347-6157, 1340-9050},
+	doi = {10.4036/iis.2002.129},
+	pages = {129--136},
+	number = {2},
+	journal = {Interdisciplinary Information Sciences},
+	author = {Sadakane, Kunihiko and Sugawara, Noriko and Tokuyama, Takeshi},
+	year = {2002}
+}
+
 @article{volpato,
 	title = {Bounds for Quantum Computational Geometry Problems},
-	abstract = {We present new quantum lower bounds and upper bounds for several computational geometry problems. The bounds presented here improve on currently known results in a number of ways. We give asymptotically optimal bounds for one of the problems considered, and we provide up to logarithmic factors optimal bounds for a number of other problems. We settle an open problem of Bahadur et al [4]. Some of these new bounds are obtained using a general algorithm for ﬁnding a minimum pair over a given arbitrary order relation.},
-	pages = {12},
 	author = {Volpato, Nilton},
-	langid = {english},
-	file = {Volpato - Bounds for Quantum Computational Geometry Problems.pdf:/home/sloth/Zotero/storage/KAZDSLCX/Volpato - Bounds for Quantum Computational Geometry Problems.pdf:application/pdf}
+	% TODO
 }
 @article{lanzagorta,
 	title = {Quantum algorithmic methods for computational geometry},
 	volume = {20},
 	issn = {1469-8072, 0960-1295},
-	url = {https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/abs/quantum-algorithmic-methods-for-computational-geometry/7D99299D774E94D7A0B167DAE5CDD1FA},
 	doi = {10.1017/S0960129510000411},
-	abstract = {In this paper we develop novel quantum algorithms based on Quantum Multi-Object Search ({QMOS}) for convex hulls and general object intersection reporting, with applications to computer graphics. These algorithms are developed and described using standard concepts from computer science by encapsulating the physics of quantum computation within black-box subroutines.},
 	pages = {1117--1125},
 	number = {6},
-	journaltitle = {Mathematical Structures in Computer Science},
+	journal = {Mathematical Structures in Computer Science},
 	author = {Lanzagorta, Marco and Uhlmann, Jeffrey},
-	urldate = {2021-06-12},
-	date = {2010-12},
-	langid = {english},
-	note = {Publisher: Cambridge University Press}
+	year = {2010},
+	publisher = {Cambridge University Press}
+}
+
+@InProceedings{aaronson2020, % NEVER SEEN
+  author =	{Scott Aaronson and Nai-Hui Chia and Han-Hsuan Lin and Chunhao Wang and Ruizhe Zhang},
+  title =	{{On the Quantum Complexity of Closest Pair and Related Problems}},
+  booktitle =	{35th Computational Complexity Conference (CCC 2020)},
+  pages =	{16:1--16:43},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-156-6},
+  ISSN =	{1868-8969},
+  year =	{2020},
+  volume =	{169},
+  editor =	{Shubhangi Saraf},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  doi =		{10.4230/LIPIcs.CCC.2020.16},
+}
+
+
+@article{ambainis_2020,
+	title = {Quantum algorithms for computational geometry problems},
+	howpublished = {\href{http://arxiv.org/abs/2004.08949}{arxiv:quant-ph/2004.08949}},
+	author = {Ambainis, Andris and Larka, Nikita},
+    year = {2020},
+    eprint={2004.08949},
+    archivePrefix={arXiv},
+    primaryClass={cs.CG}
 }
