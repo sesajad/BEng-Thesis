@@ -1,1 +1,1 @@
-Just read the pdf!
+The thesis itself in the thesis folder, but note that it's long and in Persian. I recommend you to first read **Summary of Findings** from the summary folder.
